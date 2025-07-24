@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.corpo{
+    width: 80%;
+    height: 500px;
+    border: solid;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.caramelo{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    animation: caramelo-andando 5s infinite linear;
+}
+.moto{
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    animation: pulo 500ms;
+}
+@keyframes caramelo-andando {
+    from{ right: -100px;
+
+    }
+    to{     right: 100%;
+
+    }
+}
+
+@keyframes pulo {
+    0%{ bottom: 0;}
+    40%{ bottom: 100px;}
+    50%{bottom: 100px;}
+    60%{bottom: 100px}
+    100%{ bottom: 0;}
+    
+}
